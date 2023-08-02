@@ -69,41 +69,111 @@ header {
 }
 
 /*sous-menu*/
+
+
 ul .sous-menu {
-    left: -58px;
+    min-height: 290px;
+    width: 85vw;
+    left: -22px;
     position: relative;
     top: -2px;
-    height: 350px;
     display: flex;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
+    background-color: rgb(35 35 35);
+    border-bottom: 3px solid #05c0f4;
+    display: none;
 }
 
+.nav-zelda li:hover>ul {
+    display: flex;
+}
+
+ul .sous-menu img {
+    height: 100%;
+    width: 85px;
+    border-radius: 35px 0 0 35px;
+}
+
+.menu-sous-menu {
+    max-height: 100%;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+
 .titre-sous-menu {
-    width: 35%;
+    min-width: 100%;
     display: flex;
     justify-content: center;
     position: relative;
     top: -10px;
     height: 50px;
+    margin-bottom: 5px;
     align-items: center;
     font-size: larger;
     color: #0393ba;
 }
 
-.menu-sous-menu {
-    height: 300px;
+img.image-sous-menu {
+    max-height: 35px;
+    padding-bottom: 10px;
+}
+
+.main-sous-menu {
+    display: flex;
+    justify-content: space-around;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.soluce-sous-menu {
+    width: 50%;
     display: flex;
     flex-direction: column;
-    width: 90%;
+    flex-wrap: wrap;
+    margin-left: 20px;
 }
+
+.soluce-sous-menu li {
+    min-width: 50%;
+    text-align: left;
+}
+
+.aide-sous-menu {
+    min-width: 25%;
+}
+
+.aide-sous-menu li {
+    min-width: 100%;
+    text-align: left;
+
+}
+
+.info-sous-menu {
+    width: 25%;
+}
+
+.info-sous-menu li {
+    min-width: 100%;
+    text-align: left;
+
+}
+
+
 
 .menu-sous-menu li {
     list-style-type: none;
-    text-align: center;
     padding: 0 10px;
-    background: #ADB5BD;
-    color: #7D807F;
+    color: #ADB5BD;
+    max-width: 30%;
+}
+
+li .blue-menu {
+    color: #0393ba;
+    font-weight: 900;
 }
 
 
